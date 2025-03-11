@@ -49,6 +49,6 @@ Below are visual comparisons of original and reconstructed jet events:
 
 **Original vs. Reconstructed Events**  
 *(You can add your images here)*  
-![Original vs. Reconstructed](path_to_your_image.png)
+![Original vs. Reconstructed](output.png)
 
 
