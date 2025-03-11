@@ -2,16 +2,16 @@
 
 ## Common Task 1: Autoencoder for Quark/Gluon Jet Events
 
-## Overview
+### Overview
 This project implements an autoencoder using a U-Net architecture to learn representations of quark/gluon jet events from a dataset containing 3-channel images (ECAL, HCAL, and Tracks). The autoencoder is trained to reconstruct input events, allowing for anomaly detection or feature extraction.
 
-## Dataset
+### Dataset
 The dataset consists of 125x125 images across three channels:
 - **ECAL (Electromagnetic Calorimeter)**
 - **HCAL (Hadronic Calorimeter)**
 - **Tracks**
 
-## Data Processing
+### Data Processing
 1. **Dataset**  
    The dataset is stored in an HDF5 file (`quark-gluon_data-set_n139306.hdf5`) with:
    - `X_jets`: 3-channel images of quark/gluon jets.
@@ -23,7 +23,7 @@ The dataset consists of 125x125 images across three channels:
    - Transpose the image dimensions from (125, 125, 3) to (3, 125, 125).
    - Split the dataset into an 80% training set and 20% testing set.
 
-## Model Architecture
+### Model Architecture
 The autoencoder is based on a **U-Net** design with symmetric encoder-decoder layers. The model consists of:
 
 - **Encoder:**
@@ -39,7 +39,7 @@ The autoencoder is based on a **U-Net** design with symmetric encoder-decoder la
 - **Final Output:**
   - The output passes through interpolation to match the original 125x125 image resolution.
 
-## Training Details
+### Training Details
 - **Loss Function:** L1 Loss (Mean Absolute Error)  
 - **Optimizer:** AdamW (learning rate `1e-4`, weight decay `1e-4`)  
 - **Learning Rate Scheduler:** Cosine Annealing LR (min learning rate `5e-6`, max epoch `30`)  
