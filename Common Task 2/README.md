@@ -1,1 +1,1 @@
-### Common Task 2: Jets as graphs
+# Common Task 2: Jets as graphs
