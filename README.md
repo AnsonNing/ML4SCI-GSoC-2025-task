@@ -4,8 +4,6 @@
 
 ## Common Task 2: Jets as graphs
 
-## Specific Task 1: Deep Graph Anomaly Detection with Contrastive Learning
-
 ## Specific Task 2: Learning Parametrization with Implicit Neural Representations
 
 ## Specific Task 3: Learning the Latent Structure with Diffusion Models
