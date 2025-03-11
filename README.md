@@ -46,3 +46,10 @@ The autoencoder is based on a **U-Net** design with symmetric encoder-decoder la
 - **Batch Size:** 128  
 - **Number of Epochs:** 30  
 
+### Results: Side-by-Side Comparison of Original and Reconstructed Events
+Below are visual comparisons of original and reconstructed jet events:
+
+**Original vs. Reconstructed Events**  
+*(You can add your images here)*  
+![Original vs. Reconstructed](path_to_your_image.png)
+
