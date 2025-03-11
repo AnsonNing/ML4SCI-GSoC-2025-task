@@ -51,12 +51,6 @@ The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for *
 ## Training Process
 - **Automatic Mixed Precision (AMP)** is used for **faster training**.
 - **Gradient scaling** ensures stability in mixed precision training.
-- The **best model (based on validation accuracy) is saved** automatically.
-
-## Evaluation
-- The trained model is evaluated on the **test set**.
-- Metrics include **loss and classification accuracy**.
-- The training process is visualized using **loss and accuracy curves**.
 
 ## Results
 
