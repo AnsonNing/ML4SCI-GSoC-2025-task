@@ -38,7 +38,7 @@ Each graph sample corresponds to a jet event.
 ## Sample Graph Visualization
 Below is a sample graph structure generated from a single quark/gluon jet event.
 
-![Sample Graph](sample.png)
+![Sample Graph](output.png)
 
 ## Model Architecture
 
