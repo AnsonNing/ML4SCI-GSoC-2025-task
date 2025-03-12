@@ -65,11 +65,9 @@ The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for g
 ## Results
 
 ### **Training & Test Loss**
-*(You can add a loss curve image here)*
 ![Loss Curve](path_to_your_loss_curve.png)
 
 ### **Training & Test Accuracy**
-*(You can add an accuracy curve image here)*
 ![Accuracy Curve](path_to_your_accuracy_curve.png)
 
 ### **Final Test Accuracy**
