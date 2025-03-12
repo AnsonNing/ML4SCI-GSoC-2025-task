@@ -48,7 +48,7 @@ The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for g
 - *Graph Convolution Layers:
   - 5 layers of `SAGEConv` for message passing and feature extraction.
   - Each layer applies LayerNorm and ReLU activation.
-  - *esidual connections are used for stable training.
+  - residual connections are used for stable training.
 - Pooling & Classification:
   - Global Max Pooling aggregates graph-level representations.
   - A fully connected layer outputs 2-class predictions (quark vs. gluon).
