@@ -42,29 +42,25 @@ Below is a sample graph structure generated from a single quark/gluon jet event.
 
 ## Model Architecture
 
-The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for **graph-based classification**.
+The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for graph-based classification.
 
 ### **GraphSAGE Model**
-- **Graph Convolution Layers**:
-  - 5 layers of `SAGEConv` for **message passing** and **feature extraction**.
-  - Each layer applies **LayerNorm** and **ReLU activation**.
-  - **Residual connections** are used for stable training.
-- **Pooling & Classification**:
-  - **Global Max Pooling** aggregates graph-level representations.
-  - A **fully connected layer** outputs **2-class predictions** (quark vs. gluon).
-- **Dropout** (0.3) is applied for **regularization**.
+- *Graph Convolution Layers:
+  - 5 layers of `SAGEConv` for message passing and feature extraction.
+  - Each layer applies LayerNorm and ReLU activation.
+  - *esidual connections are used for stable training.
+- Pooling & Classification:
+  - Global Max Pooling aggregates graph-level representations.
+  - A fully connected layer outputs 2-class predictions (quark vs. gluon).
+- Dropout (0.3) is applied for **regularization**.
 
 ## Training Details
 
-- **Loss Function:** Cross-Entropy Loss  
-- **Optimizer:** Adam (`lr=1e-3`, `weight_decay=5e-5`)  
-- **Scheduler:** Cosine Annealing LR with Warm-up (`80 epochs`)  
-- **Batch Size:** 32  
-- **Number of Epochs:** 80  
-
-## Training Process
-- **Automatic Mixed Precision (AMP)** is used for **faster training**.
-- **Gradient scaling** ensures stability in mixed precision training.
+- Loss Function: Cross-Entropy Loss  
+- Optimizer: Adam (`lr=1e-3`, `weight_decay=5e-5`)  
+- Scheduler: Cosine Annealing LR with Warm-up (`80 epochs`)  
+- Batch Size: 32  
+- Epochs: 80  
 
 ## Results
 
