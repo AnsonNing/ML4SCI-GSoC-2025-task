@@ -48,6 +48,6 @@ The autoencoder is based on a **U-Net** design with symmetric encoder-decoder la
 Below are visual comparisons of original and reconstructed jet events:
 
 **Original vs. Reconstructed Events**  
-![Original vs. Reconstructed](output.png)
+![Original vs. Reconstructed](compare.png)
 
 
