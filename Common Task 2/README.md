@@ -64,13 +64,10 @@ The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for g
 
 ## Results
 
-### **Training & Test Loss**
-![Loss Curve](path_to_your_loss_curve.png)
-
-### **Training & Test Accuracy**
-![Accuracy Curve](path_to_your_accuracy_curve.png)
+### **Training & Test Loss, Training & Test Accuracy**
+![Loss, Train Curve](curve.png)
 
 ### **Final Test Accuracy**
 - The best model is evaluated on the **test set**.
-- **Final test accuracy: X.XXX%** *(Replace with your actual result)*.
+- **Final test accuracy: 72.00%** 
 
