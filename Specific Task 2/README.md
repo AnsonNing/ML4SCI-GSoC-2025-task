@@ -73,11 +73,11 @@ The model's reconstruction quality is evaluated using three key metrics:
 #### Results Table
 | Sample Image | PSNR (dB) | SSIM | LPIPS |
 |-------------|-----------|------|--------|
-| 1           | 50.68     | 0.9979 | 0.0902 |
-| 2           | 52.41     | 0.9976 | 0.0552 |
-| 3           | 53.54     | 0.9976 | 0.0350 |
-| 4           | 54.32     | 0.9972 | 0.0341 |
-| 5           | 58.69     | 0.9983 | 0.0073 |
+| 1           | 57.93     | 0.9982 | 0.0072 |
+| 2           | 55.28     | 0.9971 | 0.0139 |
+| 3           | 53.10     | 0.9973 | 0.0735 |
+| 4           | 56.84     | 0.9981 | 0.0130 |
+| 5           | 57.10     | 0.9974 | 0.0367 |
 
 - **Interpretation:**
   - All PSNR values are **above 50 dB**, indicating **high-fidelity reconstruction**.
