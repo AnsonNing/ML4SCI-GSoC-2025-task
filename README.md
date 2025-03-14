@@ -6,6 +6,4 @@
 
 ## Specific Task 2: Learning Parametrization with Implicit Neural Representations
 
-## Specific Task 3: Learning the Latent Structure with Diffusion Models
-
 ## Specific Task 4: Non-local GNNs for Jet Classification
