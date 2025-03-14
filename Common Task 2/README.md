@@ -60,7 +60,7 @@ The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for g
 - Optimizer: Adam (`lr=1e-3`, `weight_decay=5e-5`)  
 - Scheduler: Cosine Annealing LR with Warm-up (`80 epochs`)  
 - Batch Size: 32  
-- Epochs: 80  
+- Epochs: 100 
 
 ## Results
 
