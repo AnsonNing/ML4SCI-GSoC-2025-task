@@ -50,7 +50,7 @@ The model is based on **GraphSAGE**, a Graph Neural Network (GNN) designed for g
   - Each layer applies LayerNorm and ReLU activation.
   - residual connections are used for stable training.
 - Pooling & Classification:
-  - Global Max Pooling aggregates graph-level representations.
+  - Global Mean (Max) Pooling aggregates graph-level representations.
   - A fully connected layer outputs 2-class predictions (quark vs. gluon).
 - Dropout (0.3) is applied for **regularization**.
 
