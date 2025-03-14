@@ -1,7 +1,7 @@
 # Specific Task 2: Implicit Neural Representations (INR) for Quark/Gluon Jet Images
 
 ## Overview
-This project is part of **Specific Task 2**, where **Implicit Neural Representations (INRs)** are used to model and reconstruct quark/gluon jet images. The INR model maps **continuous spatial coordinates** to **pixel intensity values**, allowing for efficient image representation and reconstruction. The model is evaluated using **PSNR, SSIM, and LPIPS** metrics.
+This project is part of Specific Task 2, where Implicit Neural Representations (INRs) are used to model and reconstruct quark/gluon jet images. The INR model maps continuous spatial coordinates to pixel intensity values, allowing for efficient image representation and reconstruction. The model is evaluated using PSNR, SSIM, and LPIPS metrics.
 
 ## Dataset
 The dataset consists of **125x125 pixel images** with three channels:
