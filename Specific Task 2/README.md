@@ -40,13 +40,6 @@ The model is a **fully connected feedforward network (FFN)** with positional enc
 - Gradient Scaling: Automatic Mixed Precision (AMP) for stability  
 - Batch Size: 1 (per image)  
 
-## Evaluation
-After training, the model's reconstruction quality is evaluated using:
-
-1. **PSNR (Peak Signal-to-Noise Ratio)**: Measures reconstruction fidelity.
-2. **SSIM (Structural Similarity Index)**: Measures structural similarity between original and reconstructed images.
-3. **LPIPS (Learned Perceptual Image Patch Similarity)**: Measures perceptual quality using deep features.
-
 ## Results
 
 ### Training Loss Curves
@@ -55,12 +48,40 @@ After training, the model's reconstruction quality is evaluated using:
 ### Original vs Reconstructed Images
 ![Original vs Reconstructed](path_to_comparison_images.png)
 
-### Quantitative Metrics
+### Evaluation
+The model's reconstruction quality is evaluated using three key metrics:
+
+- **PSNR (Peak Signal-to-Noise Ratio, in dB)**
+  - Measures the similarity between the original and reconstructed images.
+  - **Higher values indicate better reconstruction quality**.
+  - Typical range:
+    - **30 dB – 50 dB:** Good reconstruction.
+    - **50 dB+:** High-fidelity reconstruction.
+
+- **SSIM (Structural Similarity Index)**
+  - Evaluates structural similarity between the original and reconstructed images.
+  - **Higher values (close to 1) indicate more perceptually similar images**.
+  - Range:
+    - **0 – 1**, where **1 means perfect similarity**.
+
+- **LPIPS (Learned Perceptual Image Patch Similarity)**
+  - Measures perceptual difference between images using deep features.
+  - **Lower values indicate better perceptual similarity**.
+  - Range:
+    - **0 – 1**, where **0 means no perceptual difference**.
+
+#### Results Table
 | Sample Image | PSNR (dB) | SSIM | LPIPS |
-|--------|-----------|------|--------|
-| 1      | 50.68    | 0.9979 | 0.0902 |
-| 2      | 52.41    | 0.9976 | 0.0552 |
-| 3      | 53.54    | 0.9976 | 0.0350 |
-| 4      | 54.32    | 0.9972 | 0.0341 |
-| 5      | 58.69    | 0.9983 | 0.0073 |
+|-------------|-----------|------|--------|
+| 1           | 50.68     | 0.9979 | 0.0902 |
+| 2           | 52.41     | 0.9976 | 0.0552 |
+| 3           | 53.54     | 0.9976 | 0.0350 |
+| 4           | 54.32     | 0.9972 | 0.0341 |
+| 5           | 58.69     | 0.9983 | 0.0073 |
+
+- **Interpretation:**
+  - All PSNR values are **above 50 dB**, indicating **high-fidelity reconstruction**.
+  - SSIM values **approach 1**, meaning **very high structural similarity**.
+  - LPIPS values are **close to 0**, confirming that the reconstructed images are **perceptually similar** to the originals.
+
 
