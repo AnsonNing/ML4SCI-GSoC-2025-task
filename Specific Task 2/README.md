@@ -9,7 +9,7 @@ The dataset consists of **125x125 pixel images** with three channels:
 - **HCAL (Hadronic Calorimeter)**
 - **Tracks**
 
-Each sample represents a jet event, and the dataset is stored in an **HDF5 file**.
+Each sample represents a jet event, and the dataset is stored in an HDF5 file (`quark-gluon_data-set_n139306.hdf5`).
 
 ## Data Processing
 
