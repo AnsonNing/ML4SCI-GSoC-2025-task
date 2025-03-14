@@ -53,22 +53,22 @@ The model's reconstruction quality is evaluated using three key metrics:
 
 - **PSNR (Peak Signal-to-Noise Ratio, in dB)**
   - Measures the similarity between the original and reconstructed images.
-  - **Higher values indicate better reconstruction quality**.
+  - Higher values indicate better reconstruction quality.
   - Typical range:
     - **30 dB – 50 dB:** Good reconstruction.
     - **50 dB+:** High-fidelity reconstruction.
 
 - **SSIM (Structural Similarity Index)**
   - Evaluates structural similarity between the original and reconstructed images.
-  - **Higher values (close to 1) indicate more perceptually similar images**.
+  - Higher values (close to 1) indicate more perceptually similar images.
   - Range:
-    - **0 – 1**, where **1 means perfect similarity**.
+    - **0 – 1**, where 1 means perfect similarity.
 
 - **LPIPS (Learned Perceptual Image Patch Similarity)**
   - Measures perceptual difference between images using deep features.
-  - **Lower values indicate better perceptual similarity**.
+  - Lower values indicate better perceptual similarity.
   - Range:
-    - **0 – 1**, where **0 means no perceptual difference**.
+    - **0 – 1**, where 0 means no perceptual difference.
 
 #### Results Table
 | Sample Image | PSNR (dB) | SSIM | LPIPS |
