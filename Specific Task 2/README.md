@@ -1,1 +1,66 @@
+# Specific Task 2: Implicit Neural Representations (INR) for Quark/Gluon Jet Images
+
+## Overview
+This project is part of **Specific Task 2**, where **Implicit Neural Representations (INRs)** are used to model and reconstruct quark/gluon jet images. The INR model maps **continuous spatial coordinates** to **pixel intensity values**, allowing for efficient image representation and reconstruction. The model is evaluated using **PSNR, SSIM, and LPIPS** metrics.
+
+## Dataset
+The dataset consists of **125x125 pixel images** with three channels:
+- **ECAL (Electromagnetic Calorimeter)**
+- **HCAL (Hadronic Calorimeter)**
+- **Tracks**
+
+Each sample represents a jet event, and the dataset is stored in an **HDF5 file**.
+
+## Data Processing
+
+### 1. Positional Encoding
+- To enhance the model's ability to learn high-frequency details, **positional encoding** is applied to the input coordinates.
+- The encoding expands the 2D coordinates into a **higher-dimensional representation** using **sinusoidal functions**.
+
+### 2. Normalization and Dataset Preparation
+- The dataset is **normalized** using the global mean and standard deviation.
+- Each image is converted into a dataset where:
+  - **Input:** 2D spatial coordinates `(x, y)`.
+  - **Output:** Corresponding pixel intensity values `(R, G, B)`.
+- The dataset is loaded into a PyTorch `DataLoader` for efficient batch processing.
+
+## Model Architecture
+
+### Implicit Neural Representation (INR) Model
+The model is a **fully connected feedforward network (FFN)** with positional encoding:
+- **Input:** 2D spatial coordinates with positional encoding.
+- **Hidden Layers:** Fully connected layers with ReLU activation.
+- **Output:** Reconstructed RGB pixel values.
+
+## Training Details
+
+- Loss Function: Mean Squared Error (MSE) Loss  
+- Optimizer: AdamW (`lr=1e-3`, `weight_decay=5e-5`)  
+- Scheduler: Cosine Annealing LR (`10,000 epochs`)  
+- Gradient Scaling: Automatic Mixed Precision (AMP) for stability  
+- Batch Size: 1 (per image)  
+
+## Evaluation
+After training, the model's reconstruction quality is evaluated using:
+
+1. **PSNR (Peak Signal-to-Noise Ratio)**: Measures reconstruction fidelity.
+2. **SSIM (Structural Similarity Index)**: Measures structural similarity between original and reconstructed images.
+3. **LPIPS (Learned Perceptual Image Patch Similarity)**: Measures perceptual quality using deep features.
+
+## Results
+
+### Training Loss Curves
+![Loss Curve](path_to_loss_curve.png)
+
+### Original vs Reconstructed Images
+![Original vs Reconstructed](path_to_comparison_images.png)
+
+### Quantitative Metrics
+| Sample Image | PSNR (dB) | SSIM | LPIPS |
+|--------|-----------|------|--------|
+| 1      | 50.68    | 0.9979 | 0.0902 |
+| 2      | 52.41    | 0.9976 | 0.0552 |
+| 3      | 53.54    | 0.9976 | 0.0350 |
+| 4      | 54.32    | 0.9972 | 0.0341 |
+| 5      | 58.69    | 0.9983 | 0.0073 |
 
