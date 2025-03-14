@@ -43,10 +43,10 @@ The model is a **fully connected feedforward network (FFN)** with positional enc
 ## Results
 
 ### Training Loss Curves
-![Loss Curve](path_to_loss_curve.png)
+![Loss Curve](curve.png)
 
 ### Original vs Reconstructed Images
-![Original vs Reconstructed](path_to_comparison_images.png)
+![Original vs Reconstructed](compare.png)
 
 ### Evaluation
 The model's reconstruction quality is evaluated using three key metrics:
