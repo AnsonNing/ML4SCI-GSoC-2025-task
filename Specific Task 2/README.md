@@ -42,7 +42,7 @@ The model is a **fully connected feedforward network (FFN)** with positional enc
 
 ## Results
 
-### Training Loss Curves
+### Training Loss
 ![Loss Curve](curve.png)
 
 ### Original vs Reconstructed Images
