@@ -27,7 +27,7 @@ Each sample represents a jet event, and the dataset is stored in an HDF5 file (`
 ## Model Architecture
 
 ### Implicit Neural Representation (INR) Model
-The model is a **fully connected feedforward network (FFN)** with positional encoding:
+The model is a fully connected feedforward network (FFN) with positional encoding:
 - **Input:** 2D spatial coordinates with positional encoding.
 - **Hidden Layers:** Fully connected layers with ReLU activation.
 - **Output:** Reconstructed RGB pixel values.
