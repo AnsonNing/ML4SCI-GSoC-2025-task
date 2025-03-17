@@ -69,7 +69,7 @@ A **Hybrid GATv2-GCN Model** is implemented with:
 ### Final Test ROC-AUC Scores
 | Model | ROC-AUC (Test) |
 |------------|---------------|
-| **Baseline GCN** | 0.000 | 
-| **Hybrid GATv2-GCN** | 0.000 | 
+| **Baseline GCN** | 0.7556 | 
+| **Hybrid GATv2-GCN** | 0.7724 | 
 
 
