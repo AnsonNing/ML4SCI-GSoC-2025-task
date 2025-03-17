@@ -1,4 +1,4 @@
-# ML4SCI-GSoC-2025-task
+# ML4SCI-Genie-GSoC-2025-task
 
 ## Common Task 1: Autoencoder for Quark/Gluon Jet Events
 
