@@ -1,7 +1,7 @@
 # Specific Task 4: Non-Local GNNs for Jet Classification
 
 ## Overview
-This project is part of **Specific Task 4**, where a **Non-Local Graph Neural Network (GNN)** is implemented to classify quark/gluon jet events. The model is compared against a **baseline GCN model** using **ROC-AUC** as the evaluation metric.
+This project is part of Specific Task 4, where a Non-Local Graph Neural Network (GNN) is implemented to classify quark/gluon jet events. The model is compared against a baseline GCN model using ROC-AUC as the evaluation metric.
 
 ## Dataset
 The dataset consists of 125x125 pixel images with three channels:
