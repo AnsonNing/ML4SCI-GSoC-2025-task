@@ -66,7 +66,7 @@ A **Hybrid GATv2-GCN Model** is implemented with:
 
 ## Results
 
-### OC-AUC Comparison
+### ROC-AUC Comparison
 ![Training ROC-AUC](curve.png)
 
 ### Final Test ROC-AUC Scores
